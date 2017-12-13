@@ -21,7 +21,7 @@ end
 
 def titleize(simon_phrase)
   simon_phrase.capitalize!
-  dont_capitalize = ["and", "or", "the", "but", "over", "to", "a"]
+  dont_capitalize = ["and", "or", "the", "but", "over", "to", "a", "of", "an", "in"]
   phrase = simon_phrase.split.map { |word|
     if dont_capitalize.include?(word)
       word
